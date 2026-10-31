@@ -20,7 +20,7 @@ export default function AuthPage({ mode }) {
     try {
       if (isSignup) await signup(username, password);
       else await login(username, password);
-      navigate('/');
+      navigate('/problems/hello-arena');
     } catch (err) {
       setError(err.message);
     } finally {
